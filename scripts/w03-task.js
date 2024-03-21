@@ -52,9 +52,9 @@ document.querySelector("#multiplyNumbers").addEventListener("click", multiplyNum
 
 /* Open Function Use - Divide Numbers */
 
-function divide(dividend, divisor)
+function divide(dividend, dividsor)
 {
-    return dividend / divisor;
+    return dividend / dividsor;
 
 }
 
