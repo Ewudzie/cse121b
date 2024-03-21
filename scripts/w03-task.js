@@ -29,6 +29,8 @@ function subtractNumbers()
 {
     let subtractNumber1 = Number(document.querySelector('#subtract1').value);
     let subtractNumber2 = Number(document.querySelector('#subtract2').value);
+    return document.querySelector('#sum').value = sub(subtractNumber1, subtractNumber2);
+
 
 }
 document.querySelector("#subtractNumbers").addEventListener("click", subtractNumbers);
