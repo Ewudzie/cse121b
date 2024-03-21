@@ -52,18 +52,18 @@ document.querySelector("#multiplyNumbers").addEventListener("click", multiplyNum
 
 /* Open Function Use - Divide Numbers */
 
-function divide(dividend, dividsor)
+function divide(dividend, divisor)
 {
-    return dividend / dividsor;
+    return dividend / divisor;
 
 }
 
 function divideNumbers()
 {
     let divideNumber1 = Number(document.querySelector('#dividend').value);
-    let divideNumber2 = Number(document.querySelector('#dividsor').value);
+    let divideNumber2 = Number(document.querySelector('#divisor').value);
 
-    return document.querySelector('#quotient').value = divide(divideNumber1, divideNumber2);
+    document.querySelector('#quotient').value = divide(divideNumber1, divideNumber2);
 }
 document.querySelector("#divideNumbers").addEventListener("click", divideNumbers);
 
