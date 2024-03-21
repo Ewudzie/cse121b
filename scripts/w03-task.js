@@ -81,17 +81,17 @@ document.getElementById("getTotal").addEventListener("click", function()
 /* ARRAY METHODS - Functional Programming */
 /* Output Source Array */
 let myNumbersArray = [1,2,3,4,5,6,7,8,9,10,11,12,13];
-document.querySelector("array").innerHTML = myNumbersArray.join(", ");
+document.querySelector("#array").innerHTML = myNumbersArray.join(", ");
 
 /* Output Odds Only Array */
-document.querySelector("odds").innerHTML = myNumbersArray.filter(number => number % 2 === 1);
+document.querySelector("#odds").innerHTML = myNumbersArray.filter(number => number % 2 === 1);
 /* Output Evens Only Array */
-document.querySelector("evens").innerHTML = myNumbersArray.filter(number => number % 2 === 0);
+document.querySelector("#evens").innerHTML = myNumbersArray.filter(number => number % 2 === 0);
 
 /* Output Sum of Org. Array */
-document.querySelector("sumOfArray").innerHTML = myNumbersArray.reduce((sum, number) => sum + number);
+document.querySelector("#sumOfArray").innerHTML = myNumbersArray.reduce((sum, number) => sum + number);
 /* Output Multiplied by 2 Array */
-document.querySelector("multiplied").innerHTML = myNumbersArray.map(number => number * 2);
+document.querySelector("#multiplied").innerHTML = myNumbersArray.map(number => number * 2);
 /* Output Sum of Multiplied by 2 Array */
 multipliedElement = myNumbersArray.map(number => number * 2);
 document.querySelector("#sumOfMultied").innerHTML = multipliedElement.reduce((sum, number) => sum + number);
