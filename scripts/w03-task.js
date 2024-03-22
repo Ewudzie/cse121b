@@ -94,4 +94,4 @@ document.querySelector("#sumOfArray").innerHTML = myNumbersArray.reduce((sum, nu
 document.querySelector("#multiplied").innerHTML = myNumbersArray.map(number => number * 2);
 /* Output Sum of Multiplied by 2 Array */
 multipliedElement = myNumbersArray.map(number => number * 2)
-document.querySelector("#sumOfMultied").innerHTML = multipliedElement.reduce((sum, number) => sum + number);
+document.querySelector("#sumOfMultied").innerHTML = multipliedElement.reduce((sum, number) => sum + number)
