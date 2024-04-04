@@ -5,23 +5,34 @@ let myProfile = {name: "Edwin Ewudzie",
 photo:"images/edd-pw.jpg",
 favoriteFoods: ["Jollof rice", "Banku and Okro Soup","Fried rip plantain and beans stew", "Fufu and Palmnut soup"],
 hobbies: ["Playing the Keyboard", "Watching Movies", "Playing table tennis", "reading"],
-placesLived: []
+
+placesLived: [],
 };
 
 
 
 /* Populate Profile Object with placesLive objects */
 
-myProfile.placesLived.push(
+    myProfile.placesLived.push(
     {
-        place: "Cape Coast, CR",
-        length: "20 years",
-        place: "Aba, Abia",
-        length: "2 years",
         place: "Accra, GA",
         length: "14 years"
-    }
-);
+    },
+    ),
+    myProfile.placesLived.push(
+        
+        {
+            place: "Cape Coast, CR",
+            length: "20 years"
+        }
+    ),
+    myProfile.placesLived.push(
+        {
+            place: "Aba, Abia",
+            length: "2 years"
+        }
+    )
+
 
 
 /* DOM Manipulation - Output */
@@ -58,5 +69,5 @@ myProfile.placesLived.forEach(place => {
     let dl = document.querySelector("#places-lived");
     dl.appendChild(dt);
     dl.appendChild(dd);
-})
+});
 
