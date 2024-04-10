@@ -11,22 +11,22 @@ let templeList = [];
 const displayTemples = (temples) => {
     const templesDiv = document.getElementById("temples");
     templesDiv.innerHTML = "<ol>";
-    temples.forEach((temple) => {
-        templesDiv.innerHTML += `<li>${temple.templeName}</li>`;
+    temples.forEach((temple ) => {
+        //templesDiv.innerHTML += `${temple.templeName}`;
 
         let article = document.createElement("article");
         let heading3 = document.createElement("h3");
 
         heading3.innerHTML = temple.templeName;
 
-        var img = document.createElement("imageUrl");
-        img.src = temple.img;
+        var img = document.createElement("img");
+        img.src = temple.imageUrl;
         img.alt = temple.location;
 
         article.appendChild(heading3);
         article.appendChild(img);
 
-        templesElement.appendChild(article);
+        templesDiv.appendChild(article);
 
     });
     temples.innerHTML = "</ol>";
@@ -76,7 +76,7 @@ const filterTemples = function(temples)
 
 }
 
-getTemples(templeList);
+getTemples();
 
 /* Event Listener */
 document.querySelector("#filtered").addEventListener("change", () => {filterTemples(templeList)});
