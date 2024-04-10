@@ -53,7 +53,7 @@ function reset()
 const filterTemples = function(temples)
 {
     reset();
-    const filter = document.getElementById("filtered").value;
+    const filter = document.getElementById("#filtered").value;
 
     switch (filter) {
         case "utah":
