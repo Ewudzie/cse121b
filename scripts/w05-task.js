@@ -4,7 +4,7 @@
 
 const templesElement = "https://byui-cse.github.io/cse121b-ww-course/resources/temples.json";
 
-let templeList = fetch(templesElement);
+let templeList = [];
 
 
 /* async displayTemples Function */
