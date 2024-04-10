@@ -47,7 +47,7 @@ const displayTemples = (temples) => {
 function reset()
 {
     templesElement.innerHTML = "";
-}
+};
 
 /* filterTemples Function */
 const filterTemples = function(temples)
@@ -73,6 +73,7 @@ const filterTemples = function(temples)
         
 
     }
+    return filterTemples();
 
 }
 
