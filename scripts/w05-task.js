@@ -2,9 +2,9 @@
 
 /* Declare and initialize global variables */
 
-//const templesElement = "https://byui-cse.github.io/cse121b-ww-course/resources/temples.json";
+const templesElement = "https://byui-cse.github.io/cse121b-ww-course/resources/temples.json";
 
-let templeList = [];
+let templeList = fetch(templesElement);
 
 
 /* async displayTemples Function */
@@ -19,9 +19,9 @@ const displayTemples = (temples) => {
 
         heading3.innerHTML = temple.templeName;
 
-        var img = document.createElement("img");
+        var img = document.createElement("imageUrl");
         img.src = temple.img;
-        img.alt = temple.alt("location");
+        img.alt = temple.location;
 
         article.appendChild(heading3);
         article.appendChild(img);
@@ -46,25 +46,25 @@ const displayTemples = (temples) => {
 /* reset Function */
 function reset()
 {
-    templeList.innerHTML = "";
+    templesElement.innerHTML = "";
 }
 
 /* filterTemples Function */
 const filterTemples = function(temples)
 {
     reset();
-    const filter = document.getElementById("filtered").ariaValueMax;
+    const filter = document.getElementById("filtered").value;
 
     switch (filter) {
         case "utah":
-            displayTemples(temples.filter(temple => temple.location.toLower("Utah")));
+            displayTemples(temples.filter(temple => temple.location.toLowerCase().location("Utah")));
             break;
 
         case "notutah": 
-            displayTemples(temples.filter(temple = !temple.location.toLower("notutah")));
+            displayTemples(temples.filter(temple => !temple.location.toLowerCase().location("notutah")));
             break;
         case "older":
-            displayTemples(temples.filter(temple => new Date(temple.dedicated < (1950, 0, 1))));
+            displayTemples(temples.filter(temple => new Date(temple.dedicated.Date < (1950, 0, 1))));
         case "all":
         default:
             displayTemples(temples);
@@ -76,8 +76,7 @@ const filterTemples = function(temples)
 
 }
 
-getTemples();
+getTemples(templeList);
 
 /* Event Listener */
-let templeEvent = document.querySelector("#filtered").addEventListener("chnage", () => {filterTemples(templeList)});
-console.log(templeEvent);
+document.querySelector("#filtered").addEventListener("change", () => {filterTemples(templeList)});
