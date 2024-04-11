@@ -12,7 +12,7 @@ const displayMeals = (meals) => {
     const mealsDiv = document.getElementById("meals");
     mealsDiv.innerHTML = "<ol>";
     meals.forEach((meal ) => {
-        //templesDiv.innerHTML += `${temple.templeName}`;
+        mealsDiv.innerHTML += `<${meal.Name}`;
 
         let article = document.createElement("article");
         let heading3 = document.createElement("h3");
@@ -53,7 +53,7 @@ function reset()
 const filterMeals = function(meals)
 {
     reset();
-    const filter = document.getElementById("#filtered").value;
+    const filter = document.getElementById("filtered").value;
 
     switch (filter) {
         case "breakfast":
