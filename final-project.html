@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;600&display=swap"
     rel="stylesheet">
-  <link rel="stylesheet" href="final project/main.css">
+  <link rel="stylesheet" href="styles/main.css">
 </head>
 
 <body>
@@ -30,9 +30,9 @@
 
     <select id="filtered" title="Choose a data filter.">
       <option value="" disabled selected>Filter Meals</option>
-      <option value="utah">Utah</option>
-      <option value="notutah">Outside of Utah</option>
-      <option value="older">Built Before 1950</option>
+      <option value="breakfast">Breakfast</option>
+      <option value="lunch">Lunch</option>
+      <option value="dinner">Dinner</option>
       <option value="all">No Filter</option>
     </select>
 
@@ -46,11 +46,11 @@
   <footer>
     &copy;<span id="year"></span> | Final Project - Fetching Resturant Meals | CSE 121b
   </footer>
-  <script src="final project/main.js"></script>
+  <script src="scripts/main.js"></script>
   <script>
     document.getElementById("year").innerHTML = new Date().getFullYear();
   </script>
-  <script src="final project/project.js"></script>
+  <script src="scripts/project.js"></script>
 </body>
 
 </html>
