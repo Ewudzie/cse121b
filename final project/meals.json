@@ -1,0 +1,45 @@
+
+[
+    {
+        "mealType": "Breakfast",
+        "mealName": "Hausa Koko and Koose",
+        "description": "Millet porage eating with bread",
+        "cost": "$3.00",
+        "imageUrl": "https://www.thespruceeats.com/thmb/D5lsBYYAz2NiIup3evaCXteK8hM=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/hausa-koko-spicy-millet-porridge-39547-hero-01-edb486a34d6a4ee3b8b347430838d1f7.jpg"
+    },
+    {
+        "mealType": "Breakfast",
+        "mealName": "Tom Brown",
+        "description": "A milled roasted corn and groundnut prepared very thick and mixed with milk and sugar to taste. May be accompanied with bread or egg.",
+        "cost": "$2.50",
+        "imageUrl": "https://ocdn.eu/pulscms-transforms/1/x4Dk9kqTURBXy9kY2QxZjMyZDYzMDVmY2EwMzc1NmIxYzFmMGE1MDdjMC5qcGVnkpUDHgDNAjvNAUGTBc0DQM0BxIGhMAE"
+    },
+    {
+        "mealType": "Lunch",
+        "mealName": "Gobe",
+        "description": "Cooked beans with combination of red oil, gari and fried rip plantain",
+        "cost": "$5.00",
+        "imageUrl": "https://th.bing.com/th/id/OIP._pbbuERbR66YBr3roRM8ZAAAAA?rs=1&pid=ImgDetMain"
+    },
+    {
+        "mealType": "Lunch",
+        "mealName": "Fried rice and chicken",
+        "description": "Fried rice with chicken",
+        "cost": "$6.00",
+        "imageUrl": "https://th.bing.com/th/id/OIP.foSWCBsiSQym4ehEoExeLQHaKo?w=2261&h=3247&rs=1&pid=ImgDetMain"
+    },
+    {
+        "mealType": "Dinner",
+        "mealName": "Fufu and Palmnut soup",
+        "description": "This is a boild cassava and plantain ponded together with prepared palmnut soup",
+        "cost": "$10.00",
+        "imageUrl": "https://th.bing.com/th/id/OIP.KM75uIbAxRL73MfEycWV7QHaFj?rs=1&pid=ImgDetMain"
+    },
+    {
+        "mealType": "Dinner",
+        "mealName": "Banku and Okro Soup",
+        "dedicated": "2016, March, 20",
+        "cost": "$8.00",
+        "imageUrl": "https://i.ytimg.com/vi/3Xt58Sujaw0/maxresdefault.jpg"
+    }
+]

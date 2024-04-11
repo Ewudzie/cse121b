@@ -53,11 +53,11 @@ function reset()
 const filterTemples = function(temples)
 {
     reset();
-    const filter = document.getElementById("#filtered").value;
+    const filter = document.getElementById("filtered").value;
 
     switch (filter) {
         case "utah":
-            displayTemples(temples.filter(temple => temple.location.toLowerCase().location("Utah")));
+            displayTemples(temples.filter(temple => temple.location.toLowerCase().location ==="utah"));
             break;
 
         case "notutah": 
@@ -73,7 +73,7 @@ const filterTemples = function(temples)
         
 
     }
-    return filterTemples();
+    
 
 }
 
